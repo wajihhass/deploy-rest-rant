@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from "./Home";
 import PlaceIndex from "./places/PlaceIndex";
 import PlaceDetails from "./places/PlaceDetails";

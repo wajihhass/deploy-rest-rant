@@ -3,10 +3,7 @@ import { useEffect, useState } from "react";
 //import { useHistory } from "react-router";
 import { useNavigate } from "react-router";
 
-/*
-import { useNavigate } from 'react-router-dom';
-const navigate = useNavigate();
-navigate('/home');*/
+
 
 function PlaceIndex(data) {
 
@@ -28,7 +25,7 @@ function PlaceIndex(data) {
 		return (
 			<div className="col-sm-6" key={place.placeId}>
 				<h2>
-					<a href="#" onClick={() => navigate(`/places/${place.placeId}`)} >
+					<a href="#/" onClick={() => navigate(`/places/${place.placeId}`)} >
 						{place.name}
 					</a>
 				</h2>

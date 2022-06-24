@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-//import { useHistory, useParams } from "react-router"
+import {useParams } from "react-router"
 import { useNavigate } from 'react-router-dom';
 
 

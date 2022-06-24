@@ -39,7 +39,7 @@ function EditPlaceForm() {
 			body: JSON.stringify(place)
 		})
 
-		history.push(`/places/${place.placeId}`)
+		navigate.push(`/places/${place.placeId}`)
 	}
 
 	return (

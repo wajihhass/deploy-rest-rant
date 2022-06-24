@@ -27,7 +27,7 @@ function NewPlaceForm() {
 			body: JSON.stringify(place)
 		})
 
-		history.push('/places')
+		navigate.push('/places')
 	}
 
 	return (

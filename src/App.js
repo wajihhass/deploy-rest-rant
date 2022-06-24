@@ -21,11 +21,11 @@ function App() {
           <Route  path="/" element={<Home />} />
           <Route  path="/sign-up" element={<SignUpForm />} />
           <Route  path="/login" element={<LoginForm />} />
-          <Route path="/places" element={<PlaceIndex />} />
-          <Route path="/places/new" element={<NewPlaceForm />} />
-          <Route path="/places/:placeId" element={<PlaceDetails />} />
-          <Route path="/places/:placeId/edit" element={<EditPlaceForm />} />
-          <Route path="/" component={Error404} />
+          <Route  path="/places" element={<PlaceIndex />} />
+          <Route  path="/places/new" element={<NewPlaceForm />} />
+          <Route  path="/places/:placeId" element={<PlaceDetails />} />
+          <Route  path="/places/:placeId/edit" element={<EditPlaceForm />} />
+          <Route  path="*" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
     </CurrentUserProvider>

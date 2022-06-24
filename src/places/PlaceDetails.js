@@ -1,9 +1,14 @@
 import { useEffect, useState, useContext } from "react";
-import { useParams } from "react-router"
+import { useHistory, useParams } from "react-router"
 import { CurrentUser } from "../contexts/CurrentUser";
 import CommentCard from './CommentCard'
 import NewCommentForm from "./NewCommentForm";
 import { useNavigate } from 'react-router-dom'
+
+/*
+import { useNavigate } from 'react-router-dom';
+const navigate = useNavigate();
+navigate('/home');*/
 
 function PlaceDetails() {
 
@@ -29,14 +34,14 @@ function PlaceDetails() {
 	}
 
 	function editPlace() {
-		navigate.push(`/places/${place.placeId}/edit`)
+		navigate(`/places/${place.placeId}/edit`)
 	}
 
 	async function deletePlace() {
 		await fetch(`https://rest-appp.herokuapp.com/places/${place.placeId}`, {
 			method: 'DELETE'
 		})
-		navigate.push('/places')
+		navigate('/places')
 	}
 
 	async function deleteComment(deletedComment) {

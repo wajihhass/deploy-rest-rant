@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react"
-import {useParams } from "react-router"
+import {useHistory, useParams } from "react-router"
 import { useNavigate } from 'react-router-dom';
-
-
-//navigate('/home');*/
+/*
+import { useNavigate } from 'react-router-dom';
+const navigate = useNavigate();
+navigate('/home');*/
 
 function EditPlaceForm() {
 
-	const navigate = useNavigate()
-
+	//const history = useHistory()
+	const navigate = useNavigate();
     const { placeId } = useParams()
 
     const [place, setPlace] = useState({
@@ -39,7 +40,7 @@ function EditPlaceForm() {
 			body: JSON.stringify(place)
 		})
 
-		navigate.push(`/places/${place.placeId}`)
+		navigate(`/places/${place.placeId}`)
 	}
 
 	return (

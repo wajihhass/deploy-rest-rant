@@ -25,7 +25,7 @@ function SignUpForm() {
 			body: JSON.stringify(user)
 		})
 
-		navigate.push(`/`)
+		navigate(`/`)
 	}
 
 	return (

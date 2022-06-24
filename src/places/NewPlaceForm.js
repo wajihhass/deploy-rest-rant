@@ -1,6 +1,11 @@
 import { useState } from "react"
-//import { useHistory } from "react-router"
+//import { useHistory } from "react-router-dom"
 import { useNavigate } from 'react-router-dom'
+
+/*
+import { useNavigate } from 'react-router-dom';
+const navigate = useNavigate();
+navigate('/home');*/
 
 
 
@@ -27,7 +32,7 @@ function NewPlaceForm() {
 			body: JSON.stringify(place)
 		})
 
-		navigate.push('/places')
+		navigate('/places')
 	}
 
 	return (

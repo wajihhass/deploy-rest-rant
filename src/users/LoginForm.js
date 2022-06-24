@@ -31,7 +31,7 @@ async function handleSubmit(e) {
     const data = await response.json()
     if (response.status === 200){
         setCurrentUser(data.user)
-        navigate.push(`/`)
+        navigate(`/`)
     }
         else {
             setErrorMessage(data.message)

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Home'
 import PlaceIndex from './places/PlaceIndex'
 import PlaceDetails from './places/PlaceDetails'
@@ -16,7 +16,7 @@ function App() {
     <CurrentUserProvider>
       <BrowserRouter>
         <Navigation />
-        <Switch>
+        <Routes>
           <Route exact path="/" component={Home} />
           <Route exact path="/sign-up" component={SignUpForm} />
           <Route exact path="/login" component={LoginForm} />
@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/places/:placeId" component={PlaceDetails} />
           <Route exact path="/places/:placeId/edit" component={EditPlaceForm} />
           <Route exact path="/" component={Error404} />
-        </Switch>
+        </Routes>
       </BrowserRouter>
     </CurrentUserProvider>
   );

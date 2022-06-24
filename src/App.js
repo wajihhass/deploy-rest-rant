@@ -9,7 +9,7 @@ import EditPlaceForm from './places/EditPlaceForm'
 import SignUpForm from './users/SignUpForm'
 import LoginForm from './users/LoginForm'
 import CurrentUserProvider from './contexts/CurrentUser'
-import { Switch } from 'react-router'
+
 
 function App() {
   return (

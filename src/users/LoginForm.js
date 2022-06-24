@@ -1,8 +1,8 @@
-import React from "react"
-import { useContext, useState } from "react"
+import React from "react";
+import { useContext, useState } from "react";
 //import { useHistory } from "react-router"
-import { CurrentUser } from "../contexts/CurrentUser"
-import { useNavigate } from "react-router-dom"
+import { CurrentUser } from "../contexts/CurrentUser";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
 

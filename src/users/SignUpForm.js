@@ -1,12 +1,12 @@
 import React from "react"
 import { useState } from "react"
 //import { useHistory, useParams } from "react-router"
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 function SignUpForm() {
 
 	//const history = useHistory()
-	const navigate = useNavigate();
+	const navigate = useNavigate()
 
 	const [user, setUser] = useState({
 		firstName: '',

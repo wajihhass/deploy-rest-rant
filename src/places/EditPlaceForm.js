@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import {useHistory, useParams } from "react-router"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router";
 /*
 import { useNavigate } from 'react-router-dom';
 const navigate = useNavigate();

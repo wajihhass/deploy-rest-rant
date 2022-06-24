@@ -17,14 +17,14 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/sign-up" component={SignUpForm} />
-          <Route exact path="/login" component={LoginForm} />
-          <Route exact path="/places" component={PlaceIndex} />
-          <Route exact path="/places/new" component={NewPlaceForm} />
-          <Route exact path="/places/:placeId" component={PlaceDetails} />
-          <Route exact path="/places/:placeId/edit" component={EditPlaceForm} />
-          <Route exact path="/" component={Error404} />
+          <Route path="/" component={Home} />
+          <Route path="/sign-up" component={SignUpForm} />
+          <Route path="/login" component={LoginForm} />
+          <Route path="/places" component={PlaceIndex} />
+          <Route path="/places/new" component={NewPlaceForm} />
+          <Route path="/places/:placeId" component={PlaceDetails} />
+          <Route path="/places/:placeId/edit" component={EditPlaceForm} />
+          <Route path="/" component={Error404} />
         </Routes>
       </BrowserRouter>
     </CurrentUserProvider>

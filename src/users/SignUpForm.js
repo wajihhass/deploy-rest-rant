@@ -1,7 +1,7 @@
-import React from "react"
-import { useState } from "react"
+import React from "react";
+import { useState } from "react";
 //import { useHistory, useParams } from "react-router"
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 function SignUpForm() {
 

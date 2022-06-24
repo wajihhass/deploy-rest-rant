@@ -1,17 +1,8 @@
 import { useState } from "react"
-//import { useHistory } from "react-router-dom"
 import { useNavigate } from "react-router";
-
-/*
-import { useNavigate } from 'react-router-dom';
-const navigate = useNavigate();
-navigate('/home');*/
-
-
 
 function NewPlaceForm() {
 
-	//const history = useHistory()
 	const navigate = useNavigate()
 	const [place, setPlace] = useState({
 		name: '',

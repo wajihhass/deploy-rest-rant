@@ -1,11 +1,5 @@
 import { useState, useEffect, useContext } from "react"
-//import { useHistory } from "react-router"
 import { CurrentUser } from '../contexts/CurrentUser'
-
-/*
-import { useNavigate } from 'react-router-dom';
-const navigate = useNavigate();
-navigate('/home');*/
 
 function NewCommentForm({ place, onSubmit }) {
     const { currentUser } = useContext(CurrentUser)
@@ -16,7 +10,7 @@ function NewCommentForm({ place, onSubmit }) {
         content: '',
         stars: 3,
         rant: false,
-       authorId: ''//wajih
+       authorId: ''
     })
 
    useEffect(() => {
@@ -36,7 +30,7 @@ function NewCommentForm({ place, onSubmit }) {
             content: '',
             stars: 3,
             rant: false,
-         authorId: authors[0]?.userId// wajih
+         authorId: authors[0]?.userId
         })
     }
     

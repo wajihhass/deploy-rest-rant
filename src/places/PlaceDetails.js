@@ -1,20 +1,15 @@
 import { useEffect, useState, useContext } from "react";
-import { useHistory, useParams } from "react-router"
+import { useParams } from "react-router"
 import { CurrentUser } from "../contexts/CurrentUser";
 import CommentCard from './CommentCard'
 import NewCommentForm from "./NewCommentForm";
 import { useNavigate } from "react-router";
 
-/*
-import { useNavigate } from 'react-router-dom';
-const navigate = useNavigate();
-navigate('/home');*/
+
 
 function PlaceDetails() {
 
 	const { placeId } = useParams()
-
-	//const history = useHistory()
 	const navigate = useNavigate()
 	const { currentUser } = useContext(CurrentUser)
 

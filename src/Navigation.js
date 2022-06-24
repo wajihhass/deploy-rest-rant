@@ -1,18 +1,12 @@
 import React from "react"
 import { useContext } from 'react'
-//import { useHistory } from "react-router";
+
 import { CurrentUser } from './contexts/CurrentUser';
 import { useNavigate } from "react-router";
 
-//const navigate = useNavigate();
-
-//navigate('/home');
-
 function Navigation() {
 
-    //const history = useHistory()
-    const navigate = useNavigate()
-
+       const navigate = useNavigate()
     const { currentUser } = useContext(CurrentUser)
 
     let loginActions = (
@@ -42,7 +36,7 @@ function Navigation() {
     if (currentUser?.role === 'admin') {
         addPlaceButton = (
             <li>
-                <a href="#" onClick={() => navigate("/places/new")}>
+                <a href="#/" onClick={() => navigate("/places/new")}>
                     Add Place
                 </a>
             </li>

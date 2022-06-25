@@ -3,7 +3,7 @@ import { useParams } from "react-router"
 import { CurrentUser } from "../contexts/CurrentUser";
 import CommentCard from './CommentCard'
 import NewCommentForm from "./NewCommentForm";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 
 

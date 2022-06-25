@@ -2,7 +2,7 @@ import React from "react"
 import { useContext } from 'react'
 
 import { CurrentUser } from './contexts/CurrentUser';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 function Navigation() {
 

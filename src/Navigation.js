@@ -36,7 +36,7 @@ function Navigation() {
     if (currentUser?.role === 'admin') {
         addPlaceButton = (
             <li>
-                <a href="#/" onClick={() => navigate("/places/new")}>
+                <a href="#" onClick={() => navigate("/places/new")}>
                     Add Place
                 </a>
             </li>
